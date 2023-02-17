@@ -1,0 +1,5 @@
+https://jquery.com/download/
+https://loading.io/css/
+https://www.flaticon.com/icons
+https://cdnjs.com/libraries/font-awesome
+https://fontawesome.com/search

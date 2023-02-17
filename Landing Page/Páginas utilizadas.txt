@@ -1,0 +1,7 @@
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+https://icons.getbootstrap.com/
+https://cssgradient.io/
+https://cssgenerator.org/box-shadow-css-generator.html
+https://isotope.metafizzy.co/
+https://dimsemenov.com/plugins/magnific-popup/documentation.html
+
