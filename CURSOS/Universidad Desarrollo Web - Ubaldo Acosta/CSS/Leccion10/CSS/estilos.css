@@ -1,0 +1,124 @@
+h1 {
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    width: 50%;
+    background-color: crimson;
+}
+div.relativo {
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    border: 3px solid cornflowerblue;
+    top: 10px;
+    left: 100px;
+}
+div.absoluto {
+    /*position: static; /* Posición por default */
+    position: absolute; /* static, relative, fixed, absolute */
+    right: 10px;
+    bottom: 10px;
+    max-width: 50%;
+    border: 3px solid firebrick;
+    margin: auto;
+}
+div.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid coral;
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+div.sticky {
+    position: sticky;
+    top: 10px;
+    border: 2px solid blueviolet;
+    background-color: rgb(202, 151, 249);
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1; /* si es positivo se va adelante, si es negativo atras */
+}
+div.contenedor {
+    border: 3px dashed lime;
+    padding: 10px;
+    max-width: 50%;
+    height: 200px;
+    margin: 20px auto;
+    /*overflow: visible;*/
+    /*overflow: hidden;*/
+    /*overflow: scroll;*/
+    overflow: auto;
+}
+div p {
+    margin: 0;
+    text-align: justify;
+}
+div.caja {
+    padding: 10px;
+    max-width: 30%;
+    height: 150px;
+    overflow: auto;
+}
+div.caja.flotado {
+    float: left;
+}
+div.caja.flotado.caja1{
+    border: 3px dashed lime;
+}
+div.caja.flotado.caja2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+div.caja.caja3{
+    margin: auto;
+    border: 3px dashed darkorange;
+    clear: both;
+}
+div.sin-caja {
+    clear: both;
+    padding: 20px 10px;
+}
+
+div.bloque {
+    padding: 10px;
+    max-width: 80%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border: 3px dashed #a8dadc;
+}
+span {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: large;
+    background-color: #a8dadc;
+    border: 1px solid #457b9d;
+    height: 50px;
+    padding: 10px;
+    display: inline-block;
+}
+.menu {
+    list-style-type: none;
+    text-align: center;
+}
+.menu li {
+    display: inline-block;
+    border: 2px solid darkorange;
+    background-color: darkorange;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+

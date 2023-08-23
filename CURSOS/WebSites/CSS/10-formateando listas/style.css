@@ -1,0 +1,83 @@
+body {
+    background-color:#25272F;
+    font-family: helvetica;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.tile {
+    width: 170px;
+    height: 140px;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+}
+
+/* background colors for the tiles */
+.green {
+    background-color:#13B2A3;
+}
+
+.red {
+    background-color:#F16F51;
+}
+
+.yellow {
+    background-color:#FDB45C;        
+}
+
+.lightgrey {
+    background-color:#F6F6F6;
+    color: black;
+}
+
+.city-image {
+    background-image: url("santiago.png");
+    font-size: 20pt;
+}
+
+#main-container {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+#users-table {
+    margin: 10px auto;
+    font-weight:normal;
+}
+
+.chart-total {
+    font-size: 30pt;
+    text-align: right;
+}
+
+.event-day {
+    font-size: 55pt;
+}
+
+.event-hours {
+    font-size: 10pt;
+    font-style: italic;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.tile-list li {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+ul.tile-list li {
+    list-style-type:disc;    
+}
+
+ol.tile-list li {
+    list-style-type:decimal;   
+}
+
+.tile-list a {
+    color: white;
+    text-decoration:none;
+}

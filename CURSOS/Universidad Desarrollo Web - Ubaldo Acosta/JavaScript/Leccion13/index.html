@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejemplo DOM con JavaScript</title>
+        <style>
+            .azul {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="cabecera" class="azul">Ejemplo DOM con javascript</h1>
+        <p id="parrafo1" class="azul">Saludos!!</p>
+        <p id="parrafo2" class="azul">Otro párrafo</p>
+        <button onclick="mostrar()">Mostrar</button><br/>
+        <img src="http://globalmentoring.com.mx/imagenes/javascript.png" id="imagen">
+        <script>
+            // OBTENER ELEMENTOS POR EL NOMBRE DEL ID
+            let cabecera = document.getElementById("cabecera");
+            console.log(`Valor cabecera: ${cabecera.innerHTML}`);
+            let parrafo = document.getElementById("parrafo1");
+            console.log(`Valor parrafo: ${parrafo.innerHTML}`);
+            // parrafo.innerHTML = "Nuevo valor de párrafo";
+            // cabecera.innerHTML = "Nuevo valor de cabecera";
+
+
+            // OBTENER ELEMENTOS POR EL NOMBRE
+            let parrafos = document.getElementsByTagName("p");
+            console.log(`No. párrafos: ${parrafos.length}`);
+            for (let i = 0; i < parrafos.length; i++) {
+                console.log(`${i} - ${parrafos[i].innerHTML}`)
+            }
+
+
+            // OBTENER ELEMENTOS POR EL NOMBRE DE LA CLASE
+            let elementos = document.getElementsByClassName("azul");
+            console.log(`No. elementos: ${elementos.length}`);
+            for(let elemento of elementos) {
+                console.log(`- ${elemento.innerHTML}`)
+            }
+
+            elementos = document.querySelectorAll("p.azul");
+            console.log(`No. elementos: ${elementos.length}`);
+            for(let elemento of elementos) {
+                console.log(`- ${elemento.innerHTML}`)
+            }
+
+            // USO DE document.write
+            // document.write('Saludos desde JavaScript');
+            function mostrar() {
+                // document.write('Adios');
+                // document.getElementById("cabecera").innerHTML = "Nuevo titulo";
+                document.getElementById("imagen").src = "http://globalmentoring.com.mx/imagenes/html5.png";
+                document.getElementById("cabecera").style.color = 'red';
+            }
+        </script>
+    </body>
+</html>

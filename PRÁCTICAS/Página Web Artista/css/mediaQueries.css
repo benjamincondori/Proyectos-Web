@@ -1,0 +1,56 @@
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .shopping {
+        display: none;
+    }
+
+    .navbar .menu-bar {
+        display: block;
+        grid-column: 8/9;
+    }
+
+    .navbar .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        display: grid;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+        background-color: #edcb54;
+        transform: translateX(150%);
+        transition: 1s;
+    }
+
+    .navbar .menu-toggle {
+        transform: translateX(50%);
+    }
+
+    /* SECTION MAIN */
+
+    .hero .info-content {
+        grid-column: 2/10;
+        grid-row: 5/8;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    /* SECTION FOOTER */
+
+    .footer .follow-me {
+        display: none;
+    }
+
+    .footer .social-network {
+        text-align: center;
+    }
+
+}
+
+

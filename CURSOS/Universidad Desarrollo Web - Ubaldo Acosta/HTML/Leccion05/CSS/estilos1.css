@@ -1,0 +1,19 @@
+ol {
+    list-style-type: none;
+    counter-reset: contador; /* Se inicializa en cero */
+}
+ol li {
+    counter-increment: contador; /* Se incrementa en cada item de lista */
+}
+/* Selector before=antes */
+ol li::before {
+    content: 'Curso ' counter(contador) ': ';
+    color: #ff6f00;
+}
+/* Selector after=despues */
+ol li::after {
+    content: '.';
+}
+
+
+

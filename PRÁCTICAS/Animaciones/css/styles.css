@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313131;
+}
+
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* @keyframes animation {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+} */
+
+@keyframes animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+
+
+.title {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 0.10em;
+    border-right: 0.15em solid orange;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(30, end) infinite, blink step-end 0.5s infinite;
+} 
+
+/* Animacion del texto */
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animacion del cursor */
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+
+.form-group {
+    width: 40%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 2em;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: #eee;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+label {
+    position: absolute;
+    top: -2em;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s;
+    font-size: 1.2em;
+    color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:placeholder-shown + label {
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+

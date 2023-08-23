@@ -1,0 +1,30 @@
+h1 {
+    color: #ef476f;
+    background-color: beige;
+    text-align: center;
+    text-transform: uppercase;  /* Transforma a Mayusculas */ 
+    text-shadow: 2px 2px 2px #ced4da;  /* Dar efecto de sombreado */
+    letter-spacing: 3px;   /* Separa los caracteres */
+    word-spacing: 10px;    /* Separa las palabras */
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px 10px 10px;
+    border-radius: 5px;
+    text-decoration: overline underline;
+}
+.caja {
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+}
+.texto {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5; /* Espacio entre cada línea de párrafo */
+    white-space: normal;
+    text-shadow: 1px 1px 2px #ced4da;
+}
+

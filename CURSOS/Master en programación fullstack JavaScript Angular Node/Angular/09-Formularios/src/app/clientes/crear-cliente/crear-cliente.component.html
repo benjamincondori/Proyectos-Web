@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="form" (ngSubmit)="enviarCliente()">
+            <div class="row">
+                <div class="col-100">
+                    <label>
+                        Nombre cliente:
+                        <span class="danger" *ngIf="form.get('nombre').invalid">
+                            Obligatorio
+                        </span>
+                    </label>
+                    <input type="text" formControlName="nombre">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>
+                        CIF:
+                        <span class="danger" *ngIf="form.get('cif').invalid">
+                            Obligatorio (9 caracteres)
+                        </span>
+                    </label>
+                    <input type="text" formControlName="cif">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>Dirección:</label>
+                    <input type="text" formControlName="direccion">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>Localidad:</label>
+                    <input type="text" formControlName="localidad">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 flex j-end">
+                    <button [disabled]="form.invalid" type="submit">Enviar</button>
+                </div>
+            </div>
+            <!-- <pre>{{form.value | json}}</pre>
+            <pre>
+                Estado pristine: {{form.get('cif').pristine}}
+                Estado dirty: {{form.get('cif').dirty}}
+                Estado touched: {{form.get('cif').touched}}
+                Estado untouched: {{form.get('cif').untouched}}
+                Estado valid: {{form.get('cif').valid}}
+                Estado invalid: {{form.get('cif').invalid}}
+                Estado valid todo el formulario: {{form.valid}}
+            </pre> -->
+        </form>
+    </div>
+</div>

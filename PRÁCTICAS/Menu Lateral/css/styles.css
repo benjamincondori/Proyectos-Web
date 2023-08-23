@@ -1,0 +1,101 @@
+/* Reseteo CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generales */
+
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Botón burger */
+
+#burger {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#burger .barra {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #000;
+    transition: all ease-in-out 0.3s;
+}
+
+#burger.abierto .barra {
+    background-color: #fff;
+}
+
+#burger.abierto .barra.superior {
+    transform: translateY(8px) rotateZ(45deg);
+}
+
+#burger.abierto .barra.media {
+    width: 0;
+}
+
+#burger.abierto .barra.inferior {
+    transform: translateY(-8px) rotateZ(-45deg);
+}
+
+/* Menú lateral */
+
+.menu {
+    width: 360px;
+    height: 100vh;
+    background: #13547a;  
+    background: -webkit-linear-gradient(120deg, #13547a, #141E30);
+    background: linear-gradient(120deg, #13547a, #141E30);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -360px;
+    transition: all ease-in-out 1s;
+}
+
+.menu.abierto {
+    left: 0;
+}
+
+.menu nav {
+    margin-top: 25px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu nav a {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+.menu nav a:hover {
+    border-bottom: 2px solid #fff;
+    transform: scale(1.1, 1.1);
+}
+
+.menu .copyright {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+}
+
+

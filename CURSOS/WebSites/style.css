@@ -1,0 +1,123 @@
+/*h2 {
+    background-color: green;
+}
+
+#entrevista {
+    background-color: blue;
+}*/
+
+.body {
+    background-color: #25272F;
+    font-family: helvetica;
+    color: white;
+    font-weight: bold;
+}
+
+.tile {
+    width: 185px;
+    height: 140px;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+}
+
+.tile-double {
+    width: 420px;
+    height: 140px;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+}
+
+
+/* background colors for the tiles */
+
+.green {
+    background-color: #13B2A3;
+}
+
+.red {
+    background-color: #F16F51;
+}
+
+.yellow {
+    background-color: #FDB45C;
+}
+
+.lightgrey {
+    background-color: #F6F6F6;
+    color: black;
+}
+
+.city-image {
+    background-image: url("Imagenes/alto.jpg");
+    background-position: center;
+    background-size: cover;
+    font-size: 20pt;
+}
+
+#main-container {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+#users-table {
+    margin: 10px auto;
+    font-style: normal;
+    width: 100%;
+}
+
+#users-table th {
+    border-bottom: 1px solid #F6F6F6;
+    padding: 2px;
+    text-align: center;
+}
+
+#users-table td {
+    padding: 2px;
+    text-align: center;
+}
+
+.chart-total {
+    font-size: 30pt;
+    text-align: right;
+}
+
+.event-hours {
+    font-size: 10pt;
+    font-style: italic;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.event-day {
+    font-size: 50pt;
+}
+
+.list li {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.list li {
+    list-style-type: disc;
+}
+
+ol.list li {
+    list-style-type: decimal;
+}
+
+.event-date {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 18pt;
+}

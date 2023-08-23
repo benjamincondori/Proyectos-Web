@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formularios en HTML</title>
+    </head>
+    <body>
+        <h1>Formularios en HTML</h1>
+        <form
+            action="mi_servidor"
+            method="get"
+            target="_self"
+            autocomplete="off"
+        >
+            <fieldset>
+                <legend>Datos Personales:</legend>
+
+                <label for="idPersona">Id Persona:</label><br />
+                <!-- el disabled="true" no lo envia al servidor -->
+                <input
+                    type="text"
+                    id="idPersona"
+                    name="idPersona"
+                    readonly="true"
+                    disabled="true"  
+                    value="100"
+                /><br />
+
+                <!-- El type="hidden" no lo puede ver el usuario, esta oculto -->
+                <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+
+                <label for="text-nombre">Nombre:</label><br />
+                <input
+                    type="text"
+                    placeholder="Escribe tu nombre"
+                    id="text-nombre"
+                    name="nombre"
+                    required="true"
+                /><br />
+
+                <label for="text-apellido">Apellido:</label><br />
+                <input
+                    type="text"
+                    placeholder="Escribe tu apellido"
+                    id="text-apellido"
+                    name="apellido"
+                    required="true"
+                /><br />
+
+                <label for="text-password">Password:</label><br />
+                <input
+                    type="password"
+                    id="text-password"
+                    name="password"
+                    required="true"
+                /><br />
+
+                <label for="text-email">Email:</label><br />
+                <input type="email" id="text-email" name="email" /><br />
+
+                <label for="text-edad">Edad:</label><br />
+                <input type="number" id="text-edad" name="edad" min="1" /><br />
+
+                <!--<label for="text-peso">Peso:</label><br/>
+                <input type="number" id="text-peso" name="peso" step="any"/><br/>-->
+
+                <label>Género</label><br />
+                <input
+                    type="radio"
+                    id="femenino"
+                    name="genero"
+                    value="femenino"
+                />
+                <label for="femenino">Femenino</label><br />
+                <input
+                    type="radio"
+                    id="masculino"
+                    name="genero"
+                    value="masculino"
+                />
+                <label for="masculino">Masculino</label><br />
+
+                <label>Género Música Favorita</label><br />
+                <input
+                    type="checkbox"
+                    id="clasica"
+                    name="musica"
+                    value="clasica"
+                />
+                <label for="clasica">Clásica</label><br />
+                <input type="checkbox" id="jazz" name="musica" value="jazz" />
+                <label for="jazz">Jazz</label><br />
+                <input
+                    type="checkbox"
+                    id="romantica"
+                    name="musica"
+                    value="romantica"
+                />
+                <label for="romantica">Romántica</label><br />
+
+                <label for="autos">Marca Auto Favorito:</label><br />
+                <select name="autos" id="autos">
+                    <option value="ferrari" selected="true">Ferrari</option>
+                    <option value="lamborghini">Lamborghini</option>
+                    <option value="audi">Audi</option>
+                    <option value="rolls-royce">Rolls Royce</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="toyota">Toyota</option></select
+                ><br />
+
+                <label for="comentario">Comentario:</label><br />
+                <textarea
+                    name="comentario"
+                    id="comentario"
+                    placeholder="Escribe tu comentario aquí..."
+                    cols="30"
+                    rows="5"
+                ></textarea
+                ><br />
+
+                <input type="submit" value="Enviar" />
+                <input
+                    type="submit"
+                    formnovalidate="formnovalidate"
+                    value="Enviar sin validar"
+                />
+                <input type="reset" value="Restablecer" />
+            </fieldset>
+        </form>
+    </body>
+</html>

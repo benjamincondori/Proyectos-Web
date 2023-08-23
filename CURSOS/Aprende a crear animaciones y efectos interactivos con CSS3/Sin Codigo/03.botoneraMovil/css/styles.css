@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* Inicia Botonera Móvil */
+
+nav#botoneraMovil {
+    position: absolute;
+    width: 90%;
+    background-color: #fff;
+    top: 50px;
+    left: -100%;
+    transition: all ease-in-out 0.5s;
+}
+
+nav#botoneraMovil ul li {
+    width: 100%;
+    line-height: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    background-color: #ccc;
+}
+nav#botoneraMovil ul li:hover {
+    background: #aaa;
+}
+
+label#labelMovil span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('../img/boton1.jpg') no-repeat;
+    margin: 5px;
+}
+label#labelMovil span:hover {
+    background: url('../img/boton2.jpg') no-repeat;
+}
+label#labelMovil h2 {
+    position: absolute;
+    top: 10px;
+    left: 55px;
+}
+
+input#botonMovil {
+    display: none;
+}
+input#botonMovil:checked + label#labelMovil span {
+    background: url('../img/boton3.jpg') no-repeat;
+}
+
+input#botonMovil:checked ~ nav#botoneraMovil {
+    left: 0px;
+}
+
+

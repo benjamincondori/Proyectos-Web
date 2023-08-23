@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #edcb54;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    height: 70px;
+}
+
+.navbar .logo {
+    width: 70px;
+    height: 70px;
+    grid-column: 1/2;
+    justify-self: end;
+    align-items: center;
+}
+
+.navbar .menu {
+    grid-column: 3/7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .menu {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #181818;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .menu a:hover {
+    font-weight: 700;
+    border-bottom: 2px solid #181818;
+    transition: 0.5s;
+}
+
+.navbar .menu-bar {
+    display: none;
+}
+
+.navbar i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar .shopping {
+    grid-column: 8/9;
+}
+
+/* SECTION MAIN */
+
+.hero {
+    height: 80vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .5), rgba(16, 16, 16, .9)), url('../img/ChriStern45.jpg');
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content {
+    grid-column: 7/10;
+    grid-row: 3/7;
+    color: #fff;
+}
+
+.hero h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero h1 {
+    font-size: 5em;
+    color: #edcb54;
+}
+
+.hero p {
+    font-weight: 300;
+}
+
+.hero .btn {
+    font-size: 1em;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #edcb54;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background: #edcb54;
+    color: #181818;
+}
+
+/* SECTION FOOTER */
+
+.footer {
+    display: grid;
+    height: 61px;
+    align-items: center;
+    background-color: #181818;
+    color: #fff;
+    grid-template-areas: "listen-online follow-me social-network";
+}
+
+.footer i {
+    font-size: 27px;
+    margin-right: 15px;
+}
+
+.footer .listen-online {
+    grid-template-areas: listen-online;
+    background-color: #edcb54;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+    font-size: 1em;
+}
+
+.footer .follow-me {
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+
+.footer .social-network {
+    grid-template-areas: social-network;
+    color: #edcb54;
+}
+
+.footer .social-network i:hover {
+    color: #fff;
+}
+
+

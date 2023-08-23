@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manejo de Eventos con DOM HTML y JavaScript</title>
+    </head>
+    <body onload="entrar()">
+        <h1
+            onclick="cambiarTexto(this)"
+            onmouseover="rojo(this)"
+            onmouseout="azul(this)"
+            id="titulo"
+        >
+            Manejo DOM con JavaScript
+        </h1>
+
+        <p
+            onclick="verde(this)"
+            onmousedown="rojo(this)"
+            onmouseup="azul(this)"
+        >
+            Contenido de texto
+        </p>
+
+        <div id="mostrar"></div>
+        <br />
+
+        <form id="formulario">
+            Nombre:
+            <input
+                type="text"
+                onchange="convertir(this)"
+                onfocus="cambiar(this)"
+                onblur="regresar(this)"
+            /><br />
+            Apellido:
+            <input
+                type="text"
+                onchange="convertir(this)"
+                onfocus="cambiar(this)"
+                onblur="regresar(this)"
+            /><br /><br />
+
+            Nombre:
+            <input type="text" id="nombre" /><br />
+            Apellido:
+            <input type="text" id="apellido" /><br />
+        </form>
+
+        <script>
+            // function cambiarTexto(titulo) {
+            //     titulo.innerHTML='Cambiamos el Título';
+            // }
+
+            document.getElementById("titulo").onclick = cambiarTexto;
+            function cambiarTexto() {
+                document.getElementById("mostrar").innerHTML =
+                    "Nuevo contenido";
+            }
+
+            function entrar() {
+                alert("Entrando a la página web");
+                let texto = "";
+                if (navigator.cookieEnabled) {
+                    texto = "Las cookies están habilitadas";
+                } else {
+                    texto = "Las cookies están inhabilitadas";
+                }
+                document.getElementById("mostrar").innerHTML = texto;
+            }
+
+            // =========================================================================
+
+            function convertir(inputText) {
+                inputText.value = inputText.value.toUpperCase();
+            }
+
+            function rojo(titulo) {
+                titulo.style.color = "red";
+            }
+
+            function azul(titulo) {
+                titulo.style.color = "blue";
+            }
+
+            function verde(texto) {
+                texto.style.color = "green";
+            }
+
+            function cambiar(inputText) {
+                inputText.style.background = "yellow";
+            }
+
+            function regresar(inputText) {
+                inputText.style.background = "white";
+            }
+
+            // =========================================================================
+
+            document
+                .getElementById("nombre")
+                .addEventListener("focus", (evento) => {
+                    evento.target.style.background = "pink";
+                });
+            document
+                .getElementById("nombre")
+                .addEventListener("blur", (evento) => {
+                    evento.target.style.background = "";
+                });
+
+            document
+                .getElementById("apellido")
+                .addEventListener("focus", cambiarColor);
+            document
+                .getElementById("apellido")
+                .addEventListener("blur", regresarColor);
+
+            function cambiarColor(evento) {
+                let componente = evento.target;
+                componente.style.background = "yellow";
+            }
+            function regresarColor(evento) {
+                let componente = evento.target;
+                componente.style.background = "white";
+            }
+
+            // =========================================================================
+
+            let formulario = document.getElementById("formulario");
+            formulario
+                .addEventListener("focus", (evento) => {
+                    evento.target.style.background = "pink";
+                }, true);
+            formulario
+                .addEventListener("blur", (evento) => {
+                    evento.target.style.background = "";
+                }, true);
+
+        </script>
+    </body>
+</html>

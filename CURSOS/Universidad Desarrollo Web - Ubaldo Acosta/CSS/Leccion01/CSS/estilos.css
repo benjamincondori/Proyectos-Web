@@ -1,0 +1,16 @@
+/* Selector universal */
+* {
+    background-color: ghostwhite;
+    color: cornflowerblue;
+}
+#titulo {
+    color: crimson;
+    text-align: center;
+}
+p.centrar {
+    text-align: center;
+}
+.texto-grande {
+    font-size: 20px;
+}
+

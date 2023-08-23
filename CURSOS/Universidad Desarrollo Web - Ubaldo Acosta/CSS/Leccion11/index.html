@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Selectores Combinados en CSS</title>
+        <link rel="stylesheet" href="CSS/estilos.css"/>
+    </head>
+    <body>
+        <h1>Selectores Combinados en CSS</h1>
+
+        <!-- SELECTORES DESCENDIENTES -->
+        <div class="contenedor descendiente">
+            Selectores descendientes (en cualquier nivel interno):
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <section>
+                <p>Tercer párrafo</p>
+            </section>
+        </div>
+
+        <!-- SELECTORES HIJO (CHLID) -->
+        <div class="contenedor hijo">
+            Selectores Hijo (child):
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <section>
+                <p>Tercer párrafo</p>
+            </section>
+            <div>
+                <p>Cuarto párrafo</p>
+            </div>
+            <p>Quinto párrafo</p>
+        </div>
+
+        <!-- SELECTORES ADYACENTE (SIBLING) -->
+        <div class="contenedor adyacente">
+            Selectores adyacente:
+            <p>Primer párrafo</p>
+        </div>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+
+        <div class="contenedor hermano">
+            Selectores hermano (sibling):
+            <p>Primer párrafo</p>
+        </div>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+
+        <!-- PSEUDO CLASES -->
+        <h1>Pseudo Clases en CSS</h1>
+        <div class="caja oculto">
+            Pasa por encima
+            <p>Se muestra el párrafo</p>
+        </div>
+        <div class="caja primero">
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+        </div>
+
+        <!-- PSEUDO ELEMENTOS -->
+        <h1>Pseudo Elementos en CSS</h1>
+        <div class="cuadro">
+            <p>Selecciona el texto</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, expedita molestias asperiores et pariatur maxime tempore id unde adipisci reprehenderit aliquid ex perferendis quibusdam quisquam rerum incidunt qui natus quo, ipsum dolore voluptatibus? Consequuntur explicabo aut sint libero quo id.</p>
+        </div>
+
+        <!-- TRANSPARENCIA EN CSS -->
+        <h1>Transparencia en CSS</h1>
+        <div class="marco">
+            <p>Pasa encima de la imagen:</p>
+            <img src="http://www.globalmentoring.com.mx/imagenes/html5.png" alt="Logo HTML"/>
+        </div>
+    </body>
+</html>

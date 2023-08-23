@@ -1,0 +1,14 @@
+.tile {
+    width: 170px;
+    height: 140px;
+    margin: 5px;
+    padding: 20px;
+    background-color: magenta;
+    float: left;
+}
+
+#main-container {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+}

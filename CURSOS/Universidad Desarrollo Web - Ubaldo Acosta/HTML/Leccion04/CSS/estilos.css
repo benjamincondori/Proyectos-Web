@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;  
+    border-collapse: collapse;
+    /*border-spacing: 5px; */ 
+    padding: 5px;
+}
+caption {
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+th {
+    /*text-align: left;*/
+    color: #f1faee;
+    background-color: #1d3557;
+}
+/* even = pares
+   odd = impares */
+/* Filas pares */
+tr:nth-child(even) {
+    background-color: #f1faee;
+}
+/* Filas impares */
+tr:nth-child(odd) {
+    background-color: #a8dadc;
+}
+
+
+
+
+

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Cabeza de la Página-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi primera pagina web </title>
+
+    <style>
+        p {
+            color: red;
+        }
+        
+        h2 {
+            color: forestgreen;
+        }
+    </style>
+
+</head>
+
+<!--Cuerpo de la Página-->
+
+<body>
+
+    <div>
+        <h1>
+            Menú:
+        </h1>
+
+        <ul>
+            <li><a href="index.html" title="Inicio"> Inicio </a> </li>
+            <li><a href="challange.html" title="Challange" target="_blank"> Challange </a></li>
+            <li><a href="challange_final.html" title="Challange Final" target="_blank"> Challange Final </a></li>
+            <li><a href="estructura_semantica.html" title="Estructura Semántica" target="_blank"> Estructura Semántica
+                </a></li>
+            <li><a href="flexbox.html" title="Flexbox" target="_blank"> Flexbox </a></li>
+            <li><a href="flexbox_grid.html" title="Flexbox Grid" target="_blank"> Flexbox Grid </a></li>
+        </ul>
+
+        <h1 style="color: blue;"> Titulo de mi web </h1>
+        <h2> Bienvenidos a mi web </h2>
+        <p>
+            Hola que tal desde mi pagina web.<br /> Estoy aprendiendo HTML y CSS.
+        </p>
+
+        <hr />
+        <h2> Imagenes en HTML </h2>
+        <img src="Imagenes/gato.jpg" alt="Imagen de un gato" title="Foto de gato" width="250px" height="auto" />
+        <hr />
+
+        <h3> Tercer encabezado de la página - Etiquetas para textos </h3>
+        <p>
+            Lorem Ipsum is simply <strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. </strong> it has survived not only five centuries, but also the leap into electronic typesetting,<em> remaining essentially unchanged.</em>
+            <blockquote>
+                It was popularised in the 1960s with the release <span id="resaltado" class="rojo amarillo">of Letraset
+                    sheets containing Lorem Ipsum passages,</span> and more recently with desktop publishing software like Aldus PageMaker <i>including versions of Lorem Ipsum.</i>
+            </blockquote>
+        </p>
+
+        <!--Esto es un link-->
+        <label> Link: </label> <br />
+        <a href="http://www.google.com" target="_blank"> Ir a Google </a>
+
+        <h3> Listado de frutas: </h3>
+        <p>
+            <ol>
+                <li> Manzana
+                    <ul>
+                        <li> Roja </li>
+                        <li> Verde </li>
+                    </ul>
+                </li>
+                <li> Naranja </li>
+                <li> Sandia </li>
+                <li> Frutilla </li>
+            </ol>
+
+            <ul>
+                <li> Manzana </li>
+                <li> Naranja </li>
+                <li> Sandia </li>
+                <li> Frutilla </li>
+            </ul>
+        </p>
+
+        <h3> Formulario </h3>
+        <form>
+            <p>
+                <label for="Nombre"> Nombre: </label>
+                <input type="text" name="Nombre" placeholder="Escribe tu nombre..." />
+            </p>
+
+            <p>
+                <label for="descripcion">Descripción: </label>
+                <textarea name="descripcion"></textarea>
+            </p>
+
+            <input type="radio" name="genero" value="hombre" /> Hombre <br />
+            <input type="radio" name="genero" value="mujer" /> Mujer <br />
+            <input type="radio" name="genero" value="nada" /> Nada <br />
+
+            <select name="genero2">
+                <option value="hombre"> Hombre </option>
+                <option value="mujer"> Mujer </option>
+                <option value="nada"> Nada </option>
+            </select>
+
+            <input type="submit" value="Enviar Formulario" />
+        </form>
+
+        <h3> Tabla </h3>
+        <table border="1">
+            <tr>
+                <th> Nombre </th>
+                <th> Apellidos </th>
+                <th> Pais </th>
+            </tr>
+            <tr>
+                <td> Benjamin </td>
+                <td> Condori Vasquez </td>
+                <td> Bolivia </td>
+            </tr>
+            <tr>
+                <td> Lisbeth </td>
+                <td colspan="2"> Condori Vasquez </td>
+            </tr>
+        </table>
+    </div><br />
+
+    <hr />
+
+    <div style="color: black;">
+
+        <h1>APRENDIENDO HTML</h1>
+
+        <p style="color: black;">Lorem ipsum <strong>negrita</strong>dolor sit <b>negrita</b>amet consectetur
+            <i>cursiva</i> adipisicing <em>cursiva</em> elit. Doloribus <u>subrayado</u> in porro laborum <s>tachado
+            </s>animi molestias accusamus ipsam exercitationem possimus. Molestias distinctio sit veniam, officia consequuntur repellat velit aspernatur quasi impedit in.</p>
+
+        <p style="color: black;">
+            Subindice: Log<sub>10</sub><br /> Superindice: x<sup>2</sup>
+        </p>
+
+        texto tabulado:
+        <p style="color: black;">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, minus? Quo asperiores illum harum maiores saepe omnis iusto aut? Veniam explicabo quidem architecto similique. Itaque, voluptatum sint aspernatur esse illum inventore fugiat
+                magni nihil atque rem vero omnis iusto praesentium! Perspiciatis ratione dolorem accusantium mollitia eius nobis asperiores fugit, maiores, illo quia saepe vero! Ea, saepe distinctio debitis consequuntur eligendi sequi officia suscipit,
+                sed, dolorem a ipsa odio error quasi dignissimos sit dolorum? Ipsam recusandae doloremque rerum sed quia! Perferendis non reprehenderit delectus, soluta repudiandae beatae tempore explicabo officia perspiciatis magnam quam fugiat nobis
+                dolores alias aspernatur modi asperiores tempora?</blockquote>
+        </p>
+
+        <h2>Listas</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h2>Enlaces</h2>
+        <ul>
+            <li><a href="index.html" title="Inicio"> Inicio </a> </li>
+            <li><a href="challange.html" title="Challange" target="_blank"> Challange </a></li>
+            <li><a href="challange_final.html" title="Challange Final" target="_blank"> Challange Final </a></li>
+        </ul>
+
+        <h2>Imagenes</h2>
+        <img src="Imagenes/gato.JPG" alt="Gato" width="500px" />
+
+        <h2>Tablas</h2>
+        <table border="1">
+            <caption>TABLA 1</caption>
+            <tr>
+                <th> Nombre </th>
+                <th> Apellidos </th>
+                <th> Pais </th>
+            </tr>
+            <tr>
+                <td rowspan="2"> Benjamin y Lizeth</td>
+                <td> Condori Vasquez </td>
+                <td> Bolivia </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Castro Yovio </td>
+            </tr>
+        </table>
+
+        <h2>Formulario</h2>
+        <form>
+            <p>
+                <label for="Nombre"> Nombre: </label>
+                <input type="text" name="Nombre" placeholder="Escribe tu nombre..." />
+            </p>
+
+            <p>
+                <label for="password"> Password: </label>
+                <input type="password" name="password" placeholder="Escribe tu password..." />
+            </p>
+
+            <p>
+                <label for="email"> Email: </label>
+                <input type="email" name="email" placeholder="Escribe tu email..." />
+            </p>
+
+            <p>
+                <label for="date"> Fecha: </label>
+                <input type="date" name="date" />
+            </p>
+
+            <p>
+                <label for="month"> Mes: </label>
+                <input type="month" name="month" />
+            </p>
+
+            <p>
+                <label for="week"> Semana: </label>
+                <input type="week" name="week" />
+            </p>
+
+            <p>
+                <label for="number"> Número: </label>
+                <input type="number" name="number" max="10" min="1" />
+            </p>
+
+            <p>
+                <label for="color"> Color: </label>
+                <input type="color" name="color" />
+            </p>
+
+            <p>
+                <label for="range"> Rango: </label>
+                <input type="range" name="range" />
+            </p>
+
+            <p>
+                <label for="descripcion">Descripción: </label>
+                <textarea name="descripcion"></textarea>
+            </p>
+
+            <input type="radio" name="genero" value="hombre" /> Hombre <br />
+            <input type="radio" name="genero" value="mujer" /> Mujer <br />
+            <input type="radio" name="genero" value="nada" /> Nada <br />
+
+            <select name="genero2">
+                <option value="hombre"> Hombre </option>
+                <option value="mujer"> Mujer </option>
+                <option value="nada"> Nada </option>
+            </select>
+
+            <select name="genero2">
+                <optgroup label="Lenguajes">
+                    <option> PHP </option>
+                    <option> Java </option>
+                    <option> C# </option>
+                </optgroup>
+                <optgroup label="Bases de Datos">
+                    <option> MySQL </option>
+                    <option> Oracle </option>
+                    <option> SQL Server </option>
+                </optgroup>
+            </select>
+
+            <br />
+
+            <input list="Etiquetas" />
+            <datalist id="Etiquetas">
+                <option value="Texto"></option>/>
+                <option value="Tablas"></option>/>
+            </datalist><br />
+
+            <input type="file" /><br />
+
+            <input type="checkbox" /><br />
+
+            <input type="reset" /><br />
+
+            <button>Enviar</button><br />
+            <input type="submit" value="Enviar Formulario" />
+        </form>
+
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Formulario</legend>
+                <label for="Nombre"> Usuario: </label>
+                <input type="text" name="Nombre" placeholder="Escribe tu nombre..." autofocus required /><br><br>
+
+                <label for="email"> Email: </label>
+                <input type="email" name="email" placeholder="Escribe tu email..." required /><br><br>
+
+                <label for="password"> Password: </label>
+                <input type="password" name="password" placeholder="Escribe tu password..." required /><br><br>
+
+                <label for="descripcion">Descripción: </label>
+                <textarea name="descripcion"></textarea><br><br>
+
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div>
+        <h1>Videos</h1>
+        <video src="#" controls></video>
+
+        <video controls autoplay loop muted>
+            <source src="#" type="video/mov"> 
+            <source src="#" type="video/avi">
+            <source src="#" type="video/mp4">
+        </video>
+
+        <h1>Poster en un video</h1>
+        <video poster="Imagenes/logoHTML.png" src="#" controls></video>
+
+        <h1>Audio</h1>
+        <audio src="#" controls></audio>
+
+        <audio controls autoplay loop muted>
+            <source src="#"> 
+            <source src="#">
+            <source src="#">
+            <p>El navegador no puede leer el formato audio especificado</p>
+        </audio>
+    </div>
+
+</body>
+
+</html>
